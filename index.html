@@ -7,16 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <h3 class="herons-formula">Heron's Formula</h3>
+    <form class = "herons-formula">
+        <h3 id="hTitle">Heron's Formula</h3>
         <label for="sideA">Side A:</label><br>
-        <input type="number" id="side-a" name="sideA"><br>
+        <input type="number" id="hSideA" name="sideA"><br>
         <label for="sideB">Side B:</label><br>
-        <input type="number" id="side-b" name="sideB"><br>
+        <input type="number" id="hSideB" name="sideB"><br>
         <label for="sideC">Side C:</label><br>
-        <input type="number" id="side-c" name="sideC"><br>
+        <input type="number" id="hSideC" name="sideC"><br>
+        <input type="submit" id="hCalculate" value="Calculate"><br>
         <label for="area">Area (Result):</label><br>
-        <input type="text" id="area" name="area"><br>
-        <input type="submit" id="calculate" value="Calculate">
+        <input type="text" id="hArea" name="area" readonly><br>
+    </form>
+
+    <form> 
+        <h3 id="aTitle">Ambiguous Case</h3>
+        <label for="angleA">Angle A:</label><br>
+        <input type="number" id="aSideA" name="sideA"><br>
+        <label for="sideA">Side A:</label><br>
+        <input type="number" id="aAngleA" name="angleA"><br>
+        <label for="sideB">Side B:</label><br>
+        <input type="number" id="aSideB" name="sideB"><br>
+        <input type="submit" id="aCalculate" value="Calculate"><br>
+        <label for="Result">Result:</label><br>
+        <input type="text" id="aResult" name="Result" readonly><br>
+    </form>
+
+    <form>
+        <h3 if="nTitle">Newton's Method</h3>
+        <label for="guess"> Root Guess:</label><br>
+        <input type="number" id="rootGuess" name="guess"><br>
+        <input type="submit" id="nCalculate" value="Calculate"><br>
+        <label for="Result">Result:</label><br>
+        <input type="text" id="nResult" name="Result" readonly><br>
+    </form>    
+
+    <form> 
+        <h3 id="polynomialTitle">Polynomial Function</h3>
+        <label for="coefficients">Coefficients:</label><br>
+        <input id="pCoefficients" name="coefficients"><br>
+        <label for="exponents">Exponents:</label><br>
+        <input id="pExponents" name="exponents"><br>
+        <label for="xValue">x-value:</label><br>
+        <input type="number" id="pXValue" name="xValue"><br>
+        <input type="submit" id="pCalculate" value="Calculate"><br>
+        <label for="function">Function:</label><br>
+        <input type="text" id="pFunction" name="function" readonly><br>
+        <label for="Result">Result:</label><br>
+        <input type="text" id="pResult" name="Result" readonly><br>
+    </form>
+
 </body>
 </html>
