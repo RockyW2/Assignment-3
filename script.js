@@ -33,7 +33,7 @@ function AmbiguousCase (angleA, sideA, sideB){
         const rightTri = "Right Triangle";
         const twoTri = "Two Triangles";
         const error = "An Error Has Occured With The Calculations"
-        
+
         if(sideA < h){
             return noTri;
         }else if (sideA == h){
@@ -45,7 +45,7 @@ function AmbiguousCase (angleA, sideA, sideB){
         }else{
             return error;
         }
-    } else if (angleA > 90){
+        } else if (angleA > 90){
         if ((a < b) || (a == h)){
             return noTri;
         }else if (a > b){
@@ -59,8 +59,24 @@ function AmbiguousCase (angleA, sideA, sideB){
 
 }
 
-function NewtonsMethod (guess){
 
+
+function NewtonsMethod (guess){
+    let x0 = guess;
+    let x1 = 0;
+
+    function f(x){
+        return 6*Math.pow(x,4) - 13*Math.pow(x,3) - 13*Math.pow(x,2) + 7*x + 6;
+    }
+
+    function f1(x){
+        return 24*Math.pow(x,3) - 39*Math.pow(x,2) - 36*x + 7;
+    }
+
+    do{
+        x1 = x0 - f(x0)/f1(x0);
+    }while(Math.abs(x1-x0) > 0.0001)
+    
 }
 
 function PolynomialFunction (coefficients, exponents, xValue){
