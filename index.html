@@ -5,57 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class = "herons-formula">
-        <h3 id="hTitle">Heron's Formula</h3>
-        <label for="sideA">Side A:</label><br>
-        <input type="number" id="hSideA" name="sideA"><br>
-        <label for="sideB">Side B:</label><br>
-        <input type="number" id="hSideB" name="sideB"><br>
-        <label for="sideC">Side C:</label><br>
-        <input type="number" id="hSideC" name="sideC"><br>
-        <input type="submit" id="hCalculate" value="Calculate"><br>
-        <label for="area">Area (Result):</label><br>
-        <input type="text" id="hArea" name="area" readonly><br>
-    </form>
-
-    <form> 
-        <h3 id="aTitle">Ambiguous Case</h3>
-        <label for="angleA">Angle A:</label><br>
-        <input type="number" id="aSideA" name="sideA"><br>
-        <label for="sideA">Side A:</label><br>
-        <input type="number" id="aAngleA" name="angleA"><br>
-        <label for="sideB">Side B:</label><br>
-        <input type="number" id="aSideB" name="sideB"><br>
-        <input type="submit" id="aCalculate" value="Calculate"><br>
-        <label for="Result">Result:</label><br>
-        <input type="text" id="aResult" name="Result" readonly><br>
-    </form>
-
-    <form>
-        <h3 if="nTitle">Newton's Method</h3>
-        <label for="guess"> Root Guess:</label><br>
-        <input type="number" id="rootGuess" name="guess"><br>
-        <input type="submit" id="nCalculate" value="Calculate"><br>
-        <label for="Result">Result:</label><br>
-        <input type="text" id="nResult" name="Result" readonly><br>
-    </form>    
-
-    <form> 
-        <h3 id="polynomialTitle">Polynomial Function</h3>
-        <label for="coefficients">Coefficients:</label><br>
-        <input id="pCoefficients" name="coefficients"><br>
-        <label for="exponents">Exponents:</label><br>
-        <input id="pExponents" name="exponents"><br>
-        <label for="xValue">x-value:</label><br>
-        <input type="number" id="pXValue" name="xValue"><br>
-        <input type="submit" id="pCalculate" value="Calculate"><br>
-        <label for="function">Function:</label><br>
-        <input type="text" id="pFunction" name="function" readonly><br>
-        <label for="Result">Result:</label><br>
-        <input type="text" id="pResult" name="Result" readonly><br>
-    </form>
-
+    <div class="form-layout">
+        <form class = "herons-formula">
+            <h3 id="hTitle">Heron's Formula</h3>
+            <label for="side-a">Side A:</label><br>
+            <input type="number" id="heron-side-a" name="side-a"><br>
+            <label for="side-b">Side B:</label><br>
+            <input type="number" id="heron-side-b" name="side-b"><br>
+            <label for="side-c">Side C:</label><br>
+            <input type="number" id="heron-side-c" name="side-c"><br>
+            <input type="submit" id="heron-calculate" value="Calculate"><br>
+            <label for="area">Area (Result):</label><br>
+            <input type="text" id="heron-area" name="area" readonly><br>
+        </form>
+    
+        <form class = "ambiguous-case"> 
+            <h3 id="ambiguous-title">Ambiguous Case</h3>
+            <label for="angle-a">Angle A:</label><br>
+            <input type="number" id="ambiguous-angle-a" name="angle-a"><br>
+            <label for="side-a">Side A:</label><br>
+            <input type="number" id="ambiguous-side-a" name="side-a"><br>
+            <label for="side-b">Side B:</label><br>
+            <input type="number" id="ambiguous-side-b" name="side-b"><br>
+            <input type="submit" id="ambiguous-calculate" value="Calculate"><br>
+            <label for="result">Result:</label><br>
+            <input type="text" id="ambiguous-result" name="result" readonly><br>
+        </form>
+    
+        <form class = "newtons-method">
+            <h3 if="newton-title">Newton's Method</h3>
+            <label for="guess"> Root Guess:</label><br>
+            <input type="number" id="root-guess" name="guess"><br>
+            <input type="submit" id="newton-calculate" value="Calculate"><br>
+            <label for="result">Result:</label><br>
+            <input type="text" id="newton-result" name="result" readonly><br>
+        </form>    
+    
+        <form class = "polynomial-function"> 
+            <h3 id="polynomial-title">Polynomial Function</h3>
+            <label for="coefficients">Coefficients:</label><br>
+            <input id="polynomical-coefficients" name="coefficients"><br>
+            <label for="exponents">Exponents:</label><br>
+            <input id="polynomial-exponents" name="exponents"><br>
+            <label for="x-xalue">x-value:</label><br>
+            <input type="number" id="polynomial-x-Value" name="x-value"><br>
+            <input type="submit" id="polynomial-calculate" value="calculate"><br>
+            <label for="function">Function:</label><br>
+            <input type="text" id="polynomial-function" name="function" readonly><br>
+            <label for="Result">Result:</label><br>
+            <input type="text" id="polynomial-result" name="result" readonly><br>
+        </form>
+    </div>
 </body>
 </html>
