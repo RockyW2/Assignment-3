@@ -1,4 +1,21 @@
+document.getElementById("heron-calculate").addEventListener("click", function() {
 
+    const sideA = parseFloat(document.getElementById("hSideA").value);
+    const sideB = parseFloat(document.getElementById("hSideB").value);
+    const sideC = parseFloat(document.getElementById("hSideC").value);
+
+   
+    if (isNaN(sideA) || isNaN(sideB) || isNaN(sideC)) {
+        alert("Please enter all sides.");
+        return;
+    }
+
+ 
+    const s = (sideA + sideB + sideC) / 2;
+    const area = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+
+    document.getElementById("heron-area").value = area.toFixed(2);
+});
 function HeronsFormula (a, b, c){
     let a2 = a * a;
     let b2 = b * b;
